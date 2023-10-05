@@ -42,6 +42,6 @@ $routes->post('ajout-modification-voyage','AjoutModificationVoyage::modifier');
 $routes->get('ajouter-retour-client-voyage','AjouterRetourClientVoyage::index');
 $routes->get('ajRetourClientVoyage','AjRetourClientVoyage::ajouter');
 
-
+//route de base (page index)
 
 $routes->get('/', 'Home::index');
