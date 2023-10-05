@@ -39,8 +39,9 @@ $routes->post('ajout-modification-voyage','AjoutModificationVoyage::modifier');
 
 //route pour la page ajout client 
 
-$routes->get('ajouter-retour-client-voyage','AjouterRetourClientVoyage::index');
-$routes->get('ajRetourClientVoyage','AjRetourClientVoyage::ajouter');
+//$routes->get('ajouter-retour-client-voyage','AjouterRetourClientVoyage::index');
+$routes->get('ajouter-retour-client-voyage','AjouterRetourClientVoyage::ajouterForm');
+$routes->post('ajouter-retour-client-voyage','AjouterRetourClientVoyage::ajouter');
 
 //route de base (page index)
 
