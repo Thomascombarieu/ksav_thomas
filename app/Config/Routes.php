@@ -8,26 +8,26 @@ use CodeIgniter\Router\RouteCollection;
 
 //Routes pour la page login
 
-$routes->get('login','Login::index');
-$routes->post('login/sign-in','Login::signIn');
+$routes->get('login','Login::index',['as'=> 'Login_Form']);
+$routes->post('login/sign-in','Login::signIn',['as'=> 'Login']);
 
 //routes pour la page ListeVoyage
 
 $routes->get('liste-voyage','ListeVoyage::index');
-$routes->get('liste-voyage/ajouter','ListeVoyage::ajouterForm',['as'=> 'Ajout_Voyage']);
-$routes->post('liste-voyage/ajouter','ListeVoyage::ajouter');
-$routes->get('liste-voyage/modifier','ListeVoyage:modifierForm',['as'=> 'Modifier_Voyage']);
-$routes->post('liste-voyage/modifier','ListeVoyage:modifier');
+$routes->get('liste-voyage/ajouter','ListeVoyage::ajouterForm',['as'=> 'Ajout_Voyage_Form']);
+$routes->post('liste-voyage/ajouter','ListeVoyage::ajouter',['as'=> 'Ajout_Voyage']);
+$routes->get('liste-voyage/modifier','ListeVoyage:modifierForm',['as'=> 'Modifier_Voyage_Form']);
+$routes->post('liste-voyage/modifier','ListeVoyage:modifier',['as'=> 'Modifier_Voyage']);
 
 //route de la page retourClient
 
-$routes->get('liste-retour-client','ListeRetourClient::index');
+$routes->get('liste-retour-client','ListeRetourClient::index',['as'=> 'Liste_Retour_Client']);
 
 //route de la page ListeClient 
 
-$routes->get('liste-client','ListeClient::index');
-$routes->get('liste-client/ajout-client','listeClient::ajouterClientForm');
-$routes->post('liste-client/ajout-client','listeClient::ajouterClient');
+$routes->get('liste-client','ListeClient::index',['as'=> 'Liste_Client']);
+$routes->get('liste-client/ajout-client','listeClient::ajouterClientForm',['as'=> 'Ajouter_Client_Form']);
+$routes->post('liste-client/ajout-client','listeClient::ajouterClient',['as'=> 'Ajouter_Client']);
 
 //route de la page ajout et modification voyage 
 
@@ -40,8 +40,8 @@ $routes->post('ajout-modification-voyage','AjoutModificationVoyage::modifier');
 //route pour la page ajout client 
 
 //$routes->get('ajouter-retour-client-voyage','AjouterRetourClientVoyage::index');
-$routes->get('ajouter-retour-client-voyage','AjouterRetourClientVoyage::ajouterForm');
-$routes->post('ajouter-retour-client-voyage','AjouterRetourClientVoyage::ajouter');
+$routes->get('ajouter-retour-client-voyage','AjouterRetourClientVoyage::ajouterForm',['as'=> 'Ajout_Retour_Client_Form']);
+$routes->post('ajouter-retour-client-voyage','AjouterRetourClientVoyage::ajouter',['as'=> 'Ajout_Retour_Client']);
 
 //route de base (page index)
 
