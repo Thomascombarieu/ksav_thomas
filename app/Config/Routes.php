@@ -29,13 +29,13 @@ $routes->get('liste-client','ListeClient::index',['as'=> 'Liste_Client']);
 $routes->get('liste-client/ajout-client','listeClient::ajouterClientForm',['as'=> 'Ajouter_Client_Form']);
 $routes->post('liste-client/ajout-client','listeClient::ajouterClient',['as'=> 'Ajouter_Client']);
 
-//route de la page ajout et modification voyage 
+//route de la page ajout et modification voyage (déja présente sur liste voyage mais a vérifier)
 
-$routes->get('ajout-modification-voyage','AjoutModificationVoyage::index');
-$routes->get('ajout-modification-voyage','AjoutModificationVoyage::ajouterForm');
-$routes->post('ajout-modification-voyage','AjoutModificationVoyage::ajouter');
-$routes->get('ajout-modification-voyage','AjoutModificationVoyage::modifierForm');
-$routes->post('ajout-modification-voyage','AjoutModificationVoyage::modifier');
+// $routes->get('ajout-modification-voyage','AjoutModificationVoyage::index');
+// $routes->get('ajout-modification-voyage','AjoutModificationVoyage::ajouterForm');
+// $routes->post('ajout-modification-voyage','AjoutModificationVoyage::ajouter');
+// $routes->get('ajout-modification-voyage','AjoutModificationVoyage::modifierForm');
+// $routes->post('ajout-modification-voyage','AjoutModificationVoyage::modifier');
 
 //route pour la page ajout client 
 
