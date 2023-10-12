@@ -192,7 +192,7 @@
 
     echo form_checkbox($croisiereForm);
 
-    echo form_submit('Modifier', 'ajouter');
+    echo form_submit('Modifier', 'Modifier le voyage');
 
     echo form_close();
 
