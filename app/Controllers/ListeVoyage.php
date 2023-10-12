@@ -13,6 +13,10 @@ class ListeVoyage extends BaseController
     {
         return view('liste-voyage/ajouter');
     }
+    // public function ajouter(): string
+    // {
+    //     return view('Ajout_Voyage');
+    // }
 
     public function modifierForm(): string
     {

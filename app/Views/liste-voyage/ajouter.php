@@ -9,10 +9,12 @@
 
 <body>
     <?php
+    $this->extend('layout');
+    $this->section('contenu');
     //import du Form Helper
     helper('form');
     //Création du formulaire AjoutVoyage
-    echo form_open('Ajout_Voyage');
+    echo form_open(url_to('Ajout_Voyage'));
     echo form_reset('Vider','reset');
     
     // Input pour le nom du voyage
@@ -192,6 +194,8 @@
     echo form_submit('Valider','ajouter');
 
     echo form_close();
+
+    $this->endSection();
 
     ?>
 </body>

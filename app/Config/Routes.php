@@ -45,4 +45,4 @@ $routes->post('ajouter-retour-client-voyage','AjouterRetourClientVoyage::ajouter
 
 //route de base (page index)
 
-$routes->get('/', 'Home::index');
+//$routes->get('/', 'Home::index');
