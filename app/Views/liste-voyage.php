@@ -29,3 +29,5 @@ echo $table->generate();
 </body>
 
 </html>
+
+
