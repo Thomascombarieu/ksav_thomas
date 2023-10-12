@@ -11,10 +11,13 @@
 
 <body>
 
+<a href="<?= url_to('Ajout_Modifier_Voyage' ) ?>">  +  </a>
+
 
 <?php
 
 $table = new \CodeIgniter\View\Table();
+// $php_Button = new button;
 
 $table->setHeading('Code voyage', 'Description', 'Type de voyage','Destination');
 
@@ -29,3 +32,5 @@ echo $table->generate();
 </body>
 
 </html>
+
+
