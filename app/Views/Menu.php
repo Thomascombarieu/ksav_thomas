@@ -11,8 +11,8 @@
 
 <ul class="menu">
 	<li><a href="Ajout-Modif-Voyage.html" target="_top">Ajout/Modif Voyage</a></li>
-	<li class="deroulant"><a href="animaux.html"target="_top">animaux</a></li>		
-	<li><a href="Incription.html"target="_top">Inscription</a></li>
+	<li class="deroulant"><a href="ListeClients.html"target="_top">Liste Clients</a></li>		
+	<li><a href="Liste-Retour-Clients.html"target="_top">Liste Retour Clients</a></li>
 		
 </ul>
 
