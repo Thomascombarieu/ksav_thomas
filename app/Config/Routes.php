@@ -44,7 +44,5 @@ $routes->get('ajouter-retour-client-voyage','AjouterRetourClientVoyage::ajouterF
 $routes->post('ajouter-retour-client-voyage','AjouterRetourClientVoyage::ajouter',['as'=> 'Ajout_Retour_Client']);
 
 //route de base (page index)
-$routes->get('menu','Menu::index');
-//Menu Page
 
 //$routes->get('/', 'Home::index');
