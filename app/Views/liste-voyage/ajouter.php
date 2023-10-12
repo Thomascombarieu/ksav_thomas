@@ -16,15 +16,15 @@
     helper('form');
     //Création du formulaire AjoutVoyage
     echo form_open(url_to('Ajout_Voyage'));
-    echo form_reset('Vider','reset');
-    
+    echo form_reset('Vider', 'reset');
+
     // Input pour le nom du voyage
-    
+
     echo form_label('Nom du Voyage ');
     $nomVoyageForm = [
         'name'      => 'nomVoyage',
         'id'        => 'nomVoyage',
-        'placeholder'=> 'Entrez le nom du voyage',
+        'placeholder' => 'Entrez le nom du voyage',
         //'value'     => set_value('johndoe'),
         //'maxlength' => '100',
         'size'      => '50',
@@ -38,7 +38,7 @@
     $descVoyageForm = [
         'name'      => 'descVoyage',
         'id'        => 'descVoyage',
-        'placeholder'=> 'Entrez la description du voyage',
+        'placeholder' => 'Entrez la description du voyage',
         //'value'     => set_value('johndoe'),
         //'maxlength' => '100',
         'size'      => '50',
@@ -55,7 +55,7 @@
         'sejour'  => 'Séjour',
         'vol' => 'Vol',
     ];
-    
+
     echo form_dropdown('typeVoyage', $options,);
 
     //input destination voyage
@@ -64,7 +64,7 @@
     $destinationVoyageForm = [
         'name'      => 'destVoyage',
         'id'        => 'destVoyage',
-        'placeholder'=> 'Entrez la destination du voyage',
+        'placeholder' => 'Entrez la destination du voyage',
         //'value'     => set_value('johndoe'),
         //'maxlength' => '100',
         'size'      => '50',
@@ -81,7 +81,7 @@
         //'checked' => true,
         'style'   => 'margin:10px',
     ];
-    
+
     echo form_checkbox($transfertForm);
 
     //hotel
@@ -93,7 +93,7 @@
         //'checked' => true,
         'style'   => 'margin:10px',
     ];
-    
+
     echo form_checkbox($hotelForm);
 
     //Restauration
@@ -105,7 +105,7 @@
         //'checked' => true,
         'style'   => 'margin:10px',
     ];
-    
+
     echo form_checkbox($restaurationForm);
 
     //Service & acceuil
@@ -117,7 +117,7 @@
         //'checked' => true,
         'style'   => 'margin:10px',
     ];
-    
+
     echo form_checkbox($servForm);
 
     //animation
@@ -129,7 +129,7 @@
         //'checked' => true,
         'style'   => 'margin:10px',
     ];
-    
+
     echo form_checkbox($animationForm);
 
     //excursion & guide
@@ -141,7 +141,7 @@
         //'checked' => true,
         'style'   => 'margin:10px',
     ];
-    
+
     echo form_checkbox($guideForm);
 
     //Transport aérien
@@ -153,7 +153,7 @@
         //'checked' => true,
         'style'   => 'margin:10px',
     ];
-    
+
     echo form_checkbox($avionForm);
 
     //Transport car
@@ -165,7 +165,7 @@
         //'checked' => true,
         'style'   => 'margin:10px',
     ];
-    
+
     echo form_checkbox($carForm);
 
     //Thalasso & spa 
@@ -177,7 +177,7 @@
         //'checked' => true,
         'style'   => 'margin:10px',
     ];
-    
+
     echo form_checkbox($spaForm);
 
     //croisière
@@ -189,10 +189,10 @@
         //'checked' => true,
         'style'   => 'margin:10px',
     ];
-    
+
     echo form_checkbox($croisiereForm);
 
-    echo form_submit('Valider','ajouter');
+    echo form_submit('Valider', 'ajouter');
 
     echo form_close();
 
