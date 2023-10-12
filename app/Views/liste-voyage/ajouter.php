@@ -9,6 +9,7 @@
 
 <body>
     <?php
+    //debut de section
     $this->extend('layout');
     $this->section('contenu');
     //import du Form Helper
