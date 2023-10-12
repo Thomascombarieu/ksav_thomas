@@ -1,15 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>liste-voyages</title>
-    <link href="/inc/liste-voyage.css" type="text/css" rel="stylesheet">
-</head>
-
-
-<body>
+<?= $this->extend('layout')?>
+<?= $this->Section('contenue')?>
 
     <a href="<?= url_to('Ajout_Voyage_Form') ?>"> + </a><br><br>
     <a href="<?= url_to('Modifier_Voyage_Form') ?>"> / </a><br><br>
@@ -29,6 +19,4 @@
     echo $table->generate();
 
     ?>
-</body>
-
-</html>
+<?= $this->endSection()?>
