@@ -15,7 +15,7 @@
     //import du Form Helper
     helper('form');
     //Création du formulaire AjoutVoyage
-    echo form_open(url_to('Ajout_Voyage'));
+    echo form_open(url_to('Modifier_Voyage'));
     echo form_reset('Vider', 'reset');
 
     // Input pour le nom du voyage
@@ -25,7 +25,7 @@
         'name'      => 'nomVoyage',
         'id'        => 'nomVoyage',
         'placeholder' => 'Entrez le nom du voyage',
-        //'value'     => set_value('johndoe'),
+        'value'     => set_value('Test'),
         //'maxlength' => '100',
         'size'      => '50',
         'style'     => 'width:30%',
@@ -39,7 +39,7 @@
         'name'      => 'descVoyage',
         'id'        => 'descVoyage',
         'placeholder' => 'Entrez la description du voyage',
-        //'value'     => set_value('johndoe'),
+        'value'     => set_value('voyage voyage ~ ~ ~'),
         //'maxlength' => '100',
         'size'      => '50',
         'style'     => 'width:30%',
@@ -65,7 +65,7 @@
         'name'      => 'destVoyage',
         'id'        => 'destVoyage',
         'placeholder' => 'Entrez la destination du voyage',
-        //'value'     => set_value('johndoe'),
+        'value'     => set_value('Paris'),
         //'maxlength' => '100',
         'size'      => '50',
         'style'     => 'width:30%',
@@ -77,8 +77,8 @@
     $transfertForm = [
         'name'    => 'transfert',
         'id'      => 'prestation',
-        //'value'   => 'accept',
-        //'checked' => true,
+        // 'value'   => 'accept',
+        'checked' => true,
         'style'   => 'margin:10px',
     ];
 
@@ -89,8 +89,8 @@
     $hotelForm = [
         'name'    => 'hotel',
         'id'      => 'prestation',
-        //'value'   => 'accept',
-        //'checked' => true,
+        // 'value'   => 'accept',
+        'checked' => false,
         'style'   => 'margin:10px',
     ];
 
@@ -102,7 +102,7 @@
         'name'    => 'restauration',
         'id'      => 'prestation',
         //'value'   => 'accept',
-        //'checked' => true,
+        'checked' => true,
         'style'   => 'margin:10px',
     ];
 
@@ -114,7 +114,7 @@
         'name'    => 'serv',
         'id'      => 'prestation',
         //'value'   => 'accept',
-        //'checked' => true,
+        'checked' => true,
         'style'   => 'margin:10px',
     ];
 
@@ -126,7 +126,7 @@
         'name'    => 'animation',
         'id'      => 'prestation',
         //'value'   => 'accept',
-        //'checked' => true,
+        'checked' => true,
         'style'   => 'margin:10px',
     ];
 
@@ -138,7 +138,7 @@
         'name'    => 'guide',
         'id'      => 'prestation',
         //'value'   => 'accept',
-        //'checked' => true,
+        'checked' => false,
         'style'   => 'margin:10px',
     ];
 
@@ -150,7 +150,7 @@
         'name'    => 'avion',
         'id'      => 'prestation',
         //'value'   => 'accept',
-        //'checked' => true,
+        'checked' => true,
         'style'   => 'margin:10px',
     ];
 
@@ -162,7 +162,7 @@
         'name'    => 'car',
         'id'      => 'prestation',
         //'value'   => 'accept',
-        //'checked' => true,
+        'checked' => true,
         'style'   => 'margin:10px',
     ];
 
@@ -174,7 +174,7 @@
         'name'    => 'spa',
         'id'      => 'prestation',
         //'value'   => 'accept',
-        //'checked' => true,
+        'checked' => true,
         'style'   => 'margin:10px',
     ];
 
@@ -186,7 +186,7 @@
         'name'    => 'croisiere',
         'id'      => 'prestation',
         //'value'   => 'accept',
-        //'checked' => true,
+        'checked' => true,
         'style'   => 'margin:10px',
     ];
 
