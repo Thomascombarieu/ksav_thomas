@@ -13,7 +13,7 @@
     helper('form');
     //Création du formulaire AjoutVoyage
     echo form_open('ajoutVoyage');
-    form_reset('Vider');
+    echo form_reset('Vider','reset');
     
     // Input pour le nom du voyage
     
@@ -189,7 +189,9 @@
     
     echo form_checkbox($croisiereForm);
 
-    form_submit('Valider');
+    echo form_submit('Valider','ajouter');
+
+    echo form_close();
 
     ?>
 </body>
