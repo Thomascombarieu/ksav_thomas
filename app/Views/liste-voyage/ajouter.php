@@ -12,7 +12,7 @@
     //import du Form Helper
     helper('form');
     //Création du formulaire AjoutVoyage
-    echo form_open('ajoutVoyage');
+    echo form_open('Ajout_Voyage');
     echo form_reset('Vider','reset');
     
     // Input pour le nom du voyage
