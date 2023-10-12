@@ -8,8 +8,8 @@ use CodeIgniter\Router\RouteCollection;
 
 //Routes pour la page login
 
-$routes->get('login','Login::index',['as'=> 'Login_Form']);
-$routes->post('login/sign-in','Login::signIn',['as'=> 'Login']);
+$routes->get('/','Login::index',['as'=> 'Login_Form']);
+$routes->post('/sign-in','Login::signIn',['as'=> 'Login']);
 
 //routes pour la page ListeVoyage
 
