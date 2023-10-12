@@ -14,9 +14,9 @@ $routes->post('login/sign-in','Login::signIn');
 //routes pour la page ListeVoyage
 
 $routes->get('liste-voyage','ListeVoyage::index');
-$routes->get('liste-voyage/ajouter','ListeVoyage::ajouterForm',['as'=> 'Ajout_Modifier_Voyage']);
+$routes->get('liste-voyage/ajouter','ListeVoyage::ajouterForm',['as'=> 'Ajout_Voyage']);
 $routes->post('liste-voyage/ajouter','ListeVoyage::ajouter');
-$routes->get('liste-voyage/modifier','ListeVoyage:modifierForm');
+$routes->get('liste-voyage/modifier','ListeVoyage:modifierForm',['as'=> 'Modifier_Voyage']);
 $routes->post('liste-voyage/modifier','ListeVoyage:modifier');
 
 //route de la page retourClient

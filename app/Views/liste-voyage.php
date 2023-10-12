@@ -11,8 +11,8 @@
 
 <body>
 
-<a href="<?= url_to('Ajout_Modifier_Voyage' ) ?>">  +  </a>
-
+<a href="<?= url_to('Ajout_Voyage' ) ?>">  +  </a>
+<a href="<?= url_to('Modifier_Voyage' ) ?>">  /  </a>
 
 <?php
 
