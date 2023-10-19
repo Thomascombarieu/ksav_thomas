@@ -1,7 +1,6 @@
 <?= $this->extend('layout')?>
 <?= $this->Section('contenue')?>
 
-<body>
     <?php
     //debut de section
     // $this->extend('layout');
@@ -194,6 +193,6 @@
     // $this->endSection();
 
     ?>
-</body>
+
 <?= $this->endSection()?>
 </html>
