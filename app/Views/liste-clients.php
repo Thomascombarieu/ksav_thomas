@@ -4,6 +4,6 @@
 $table = new \CodeIgniter\View\Table();
     // $php_Button = new button;
 
-    $table->setHeading('Code voyage', 'Description', 'Type de voyage', 'Destination');
+    $table->setHeading('N°Client', 'Nom', 'Prénom', 'Adresse','Tel');
 ?>
 <?= $this->endSection()?>
