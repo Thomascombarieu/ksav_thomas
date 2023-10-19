@@ -10,8 +10,8 @@ $table = new \CodeIgniter\View\Table();
 
 // echo $phrase;
 
-/*foreach ($etudiants as $etudiant) {
-    echo "<p>$etudiant</p>";
+/*foreach ($clients as $client) {
+    echo "<p>$client</p>";
 }*/
 
 
