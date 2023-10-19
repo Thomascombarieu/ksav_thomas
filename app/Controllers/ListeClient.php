@@ -2,10 +2,10 @@
 
 namespace App\Controllers;
 
-class ListeClients extends BaseController
+class ListeClient extends BaseController
 {
     public function index(): string
     {
-        return view('liste-clients');
+        return view('liste-client');
     }
 }
