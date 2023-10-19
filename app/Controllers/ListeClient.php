@@ -8,15 +8,15 @@ class ListeClient extends BaseController
     {
 
         // récupérer la liste des clients en base -> $clients
-        $delmeModel = new \App\Models\Delme();
-        $etudiants = $delmeModel->findAll();
+        $clientModel = new \App\Models\Clients();
+        $client = $clientModel->findAll();
 
         // vérifier le contenu de $clients
-        var_dump($etudiants);
+        var_dump($client);
         
         // envoyer les clients à la vue (comme avec etudiants)
         return view('liste-client', [
-            'etudiants' => $etudiants
+            'client' => $client
         ]);
     }
 }
