@@ -7,4 +7,57 @@ th,td{
 	text-align:center;
 }
 
+/* --------------Layout------------- */
+
+/* initialisation css */
+*{
+    margin: 0%;
+    padding: 0%;
+    transition: .5s;
+}
+/*CSS pour le header du layout*/
+nav{
+    width: 100%;
+    margin: 0 auto;
+    background-color: white;
+    position: sticky;
+    top: 0px;
+}
+nav a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    background-color: violet;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+}
+nav a:hover{
+    color: blueviolet;
+    border-bottom: 2px solid palevioletred;
+    background-color: plum;
+}
+nav ul{
+    list-style-type:none;
+
+}
+nav li{
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*CSS pour le footer du layout*/
+div.Lfooter{
+    background-color: blueviolet;
+    text-align: center;
+    width: 100%;
+
+}
+
 /* ------------------------------------ */
