@@ -10,9 +10,9 @@ $table = new \CodeIgniter\View\Table();
 
 echo $phrase;
 
-foreach ($etudiants as $etudiant) {
+/*foreach ($etudiants as $etudiant) {
     echo "<p>$etudiant</p>";
-}
+}*/
 
 
 $table->setHeading('N°Client', 'Nom', 'Prénom', 'Adresse', 'Tel');
