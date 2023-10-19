@@ -26,8 +26,7 @@
 </header>
 
 <body>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi illo laboriosam sunt nemo id esse, recusandae
-        molestiae quo nobis, dolorem doloribus cumque atque earum quod voluptates obcaecati vel. Expedita, quia?</p>
+    <!-- Insérer la ligne pour le contenu -->
 </body>
 <footer>
     <div class="Lfooter">
