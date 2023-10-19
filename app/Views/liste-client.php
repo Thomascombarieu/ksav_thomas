@@ -8,11 +8,11 @@ $table = new \CodeIgniter\View\Table();
 // $php_Button = new button;
 
 
-// echo $phrase;
 
-/*foreach ($clients as $client) {
-    echo "<p>$client</p>";
-}*/
+
+ foreach ($clients as $client) {
+     echo "<p>$clients</p>";
+ }
 
 
 $table->setHeading('N°Client', 'Nom', 'Prénom', 'Adresse', 'Tel');
