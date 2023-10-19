@@ -1,11 +1,14 @@
+<?= $this->extend('layout')?>
+<?= $this->Section('contenue')?>
+
     <?php
     //debut de section
-    $this->extend('layout');
-    $this->section('contenu');
+    // $this->extend('layout');
+    // $this->section('contenu');
     //import du Form Helper
     helper('form');
     //Création du formulaire AjoutVoyage
-    echo form_open(url_to('Modifier_Voyage'));
+    echo form_open(url_to('Ajout_Voyage'));
     echo form_reset('Vider', 'reset');
 
     // Input pour le nom du voyage
@@ -15,7 +18,7 @@
         'name'      => 'nomVoyage',
         'id'        => 'nomVoyage',
         'placeholder' => 'Entrez le nom du voyage',
-        'value'     => set_value('Test'),
+        //'value'     => set_value('johndoe'),
         //'maxlength' => '100',
         'size'      => '50',
         'style'     => 'width:30%',
@@ -29,7 +32,7 @@
         'name'      => 'descVoyage',
         'id'        => 'descVoyage',
         'placeholder' => 'Entrez la description du voyage',
-        'value'     => set_value('voyage voyage ~ ~ ~'),
+        //'value'     => set_value('johndoe'),
         //'maxlength' => '100',
         'size'      => '50',
         'style'     => 'width:30%',
@@ -40,6 +43,7 @@
 
     echo form_label('Type de voyage ');
     $options = [
+        'vide'  => '...',
         'circuit'  => 'Circuit',
         'croisiere'    => 'Croisière',
         'sejour'  => 'Séjour',
@@ -55,7 +59,7 @@
         'name'      => 'destVoyage',
         'id'        => 'destVoyage',
         'placeholder' => 'Entrez la destination du voyage',
-        'value'     => set_value('Paris'),
+        //'value'     => set_value('johndoe'),
         //'maxlength' => '100',
         'size'      => '50',
         'style'     => 'width:30%',
@@ -67,8 +71,8 @@
     $transfertForm = [
         'name'    => 'transfert',
         'id'      => 'prestation',
-        // 'value'   => 'accept',
-        'checked' => true,
+        //'value'   => 'accept',
+        //'checked' => true,
         'style'   => 'margin:10px',
     ];
 
@@ -79,8 +83,8 @@
     $hotelForm = [
         'name'    => 'hotel',
         'id'      => 'prestation',
-        // 'value'   => 'accept',
-        'checked' => false,
+        //'value'   => 'accept',
+        //'checked' => true,
         'style'   => 'margin:10px',
     ];
 
@@ -92,7 +96,7 @@
         'name'    => 'restauration',
         'id'      => 'prestation',
         //'value'   => 'accept',
-        'checked' => true,
+        //'checked' => true,
         'style'   => 'margin:10px',
     ];
 
@@ -104,7 +108,7 @@
         'name'    => 'serv',
         'id'      => 'prestation',
         //'value'   => 'accept',
-        'checked' => true,
+        //'checked' => true,
         'style'   => 'margin:10px',
     ];
 
@@ -116,7 +120,7 @@
         'name'    => 'animation',
         'id'      => 'prestation',
         //'value'   => 'accept',
-        'checked' => true,
+        //'checked' => true,
         'style'   => 'margin:10px',
     ];
 
@@ -128,7 +132,7 @@
         'name'    => 'guide',
         'id'      => 'prestation',
         //'value'   => 'accept',
-        'checked' => false,
+        //'checked' => true,
         'style'   => 'margin:10px',
     ];
 
@@ -140,7 +144,7 @@
         'name'    => 'avion',
         'id'      => 'prestation',
         //'value'   => 'accept',
-        'checked' => true,
+        //'checked' => true,
         'style'   => 'margin:10px',
     ];
 
@@ -152,7 +156,7 @@
         'name'    => 'car',
         'id'      => 'prestation',
         //'value'   => 'accept',
-        'checked' => true,
+        //'checked' => true,
         'style'   => 'margin:10px',
     ];
 
@@ -164,7 +168,7 @@
         'name'    => 'spa',
         'id'      => 'prestation',
         //'value'   => 'accept',
-        'checked' => true,
+        //'checked' => true,
         'style'   => 'margin:10px',
     ];
 
@@ -176,16 +180,19 @@
         'name'    => 'croisiere',
         'id'      => 'prestation',
         //'value'   => 'accept',
-        'checked' => true,
+        //'checked' => true,
         'style'   => 'margin:10px',
     ];
 
     echo form_checkbox($croisiereForm);
 
-    echo form_submit('Modifier', 'Modifier le voyage');
+    echo form_submit('Valider', 'ajouter');
 
     echo form_close();
 
-    $this->endSection();
+    // $this->endSection();
 
     ?>
+
+<?= $this->endSection()?>
+</html>

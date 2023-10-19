@@ -1,10 +1,7 @@
-<?= $this->extend('layout')?>
-<?= $this->Section('contenue')?>
-
     <?php
     //debut de section
-    // $this->extend('layout');
-    // $this->section('contenu');
+    $this->extend('layout');
+    $this->section('contenu');
     //import du Form Helper
     helper('form');
     //Création du formulaire AjoutVoyage
@@ -190,9 +187,7 @@
 
     echo form_close();
 
-    // $this->endSection();
+    $this->endSection();
 
     ?>
 
-<?= $this->endSection()?>
-</html>
