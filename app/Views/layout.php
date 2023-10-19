@@ -27,6 +27,7 @@
 
 <body>
     <!-- Insérer la ligne pour le contenu -->
+    <?= $this->renderSection('contenu')?>
 </body>
 <footer>
     <div class="Lfooter">

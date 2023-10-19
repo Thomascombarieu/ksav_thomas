@@ -1,5 +1,5 @@
 <?= $this->extend('layout') ?>
-<?= $this->Section('contenue') ?>
+<?= $this->section('contenu') ?>
 
 
 
@@ -8,7 +8,7 @@ $table = new \CodeIgniter\View\Table();
 // $php_Button = new button;
 
 
-echo $phrase;
+// echo $phrase;
 
 /*foreach ($etudiants as $etudiant) {
     echo "<p>$etudiant</p>";

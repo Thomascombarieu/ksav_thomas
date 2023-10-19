@@ -16,7 +16,6 @@ class ListeClient extends BaseController
         
         // envoyer les clients à la vue (comme avec etudiants)
         return view('liste-client', [
-            'phrase' => 'Bonjour ici c\'est la liste des étudiants',
             'etudiants' => $etudiants
         ]);
     }
