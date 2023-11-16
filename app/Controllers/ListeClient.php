@@ -4,19 +4,18 @@ namespace App\Controllers;
 
 class ListeClient extends BaseController
 {
-    public function index(): string
+    public function index()
     {
 
         // récupérer la liste des clients en base -> $clients
         $clientModel = new \App\Models\Clients();
         $clients = $clientModel->findAll();
 
-        // vérifier le contenu de $clients
-        var_dump($clients);
-        
+
         // // envoyer les clients à la vue (comme avec etudiants)
-        // return view('liste-client', [
-        //     'client' => $client
-        // ]);
+
+        return view('liste-client', [
+            'clients' => $clients // dans le code de la vue, il y aura une variable $clients
+        ]);
     }
 }

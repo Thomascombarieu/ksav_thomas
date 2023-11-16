@@ -8,19 +8,21 @@ $table = new \CodeIgniter\View\Table();
 // $php_Button = new button;
 
 
+// foreach($tableau as $element) { ... }
+
+// vérifier le contenu de $clients
+// print "<pre>";
+// print_r($clients);
+// print "</pre>";
+
+foreach ($clients as $client) {
+    // echo "<p>$client</p>";
+    $table->addRow($client);
+}
 
 
- foreach ($clients as $client) {
-     echo "<p>$clients</p>";
- }
+$table->setHeading('N°Client', 'Nom', 'Prénom','Date_Naissance' ,'Mail', 'Tel','Adresse');
 
-
-$table->setHeading('N°Client', 'Nom', 'Prénom', 'Adresse', 'Tel');
-
-$table->addRow('1', 'Votte', 'Mathyss', 'mathyssvotte@gmail.com', '07 83 54 72 55');
-$table->addRow('124', 'Combarieu', 'Thomas', 'Combarieu.tho82@gmail.com', '06 77 88 44 22');
-$table->addRow('125', 'Alim', 'Miloud', 'Miloud@Hotmail.fr', '06 99 34 58 02');
-$table->addRow('315', 'Dumas', 'Jade', 'IJade@gmail.com', '07 81 02 58 21');
 
 echo $table->generate();
 ?>

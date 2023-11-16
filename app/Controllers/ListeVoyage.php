@@ -7,6 +7,8 @@ class ListeVoyage extends BaseController
     public function index(): string
     {
         return view('liste-voyage');
+
+        
     }
 
     public function ajouterForm(): string
