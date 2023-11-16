@@ -2,6 +2,9 @@
 
 namespace App\Controllers;
 
+use Config\View;
+use PhpParser\Node\Expr\Cast\String_;
+
 class ListeClient extends BaseController
 {
     public function index()
@@ -17,5 +20,9 @@ class ListeClient extends BaseController
         return view('liste-client', [
             'clients' => $clients // dans le code de la vue, il y aura une variable $clients
         ]);
+    }
+    public function ajouterClientForm(): String
+    {
+        return view('liste-client/ajouter');
     }
 }
