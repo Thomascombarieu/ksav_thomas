@@ -17,11 +17,11 @@ $table = new \CodeIgniter\View\Table();
 
 foreach ($retourclients as $retourclient) {
     // echo "<p>$client</p>";
-    $table->addRow($client);
+    $table->addRow($retourclient);
 }
 
 
-$table->setHeading('N°Client', 'Nom', 'Prénom','Date_Naissance' ,'Mail', 'Tel','Adresse');
+$table->setHeading('N°Retour Client', 'ID voyage', 'ID client','Numéro de réservation' ,'Date de départ', 'Ville de départ');
 
 
 echo $table->generate();
