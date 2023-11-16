@@ -1,7 +1,6 @@
 <?= $this->extend('layout') ?>
 <?= $this->section('contenu') ?>
 
-<a href="<?= url_to('Ajout_Voyage_Form') ?>"> + </a><br><br>
 <a href="<?= url_to('Modifier_Voyage_Form') ?>"> / </a><br><br>
 
 <?php
