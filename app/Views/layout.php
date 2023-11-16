@@ -9,6 +9,7 @@ helper('html');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php echo link_tag('inc/Ksav.css') ?>
     <title>KSAV</title>
+    <!-- <base href="<?= base_url() ?>"> -->
 </head>
 <header>
     <nav>
@@ -24,6 +25,8 @@ helper('html');
             
         </ul>
     </nav>
+
+    <!-- <img src="img/toto.jpg" /> -->
 
 </header>
 
