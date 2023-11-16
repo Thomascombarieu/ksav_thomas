@@ -1,7 +1,8 @@
+<?= $this->extend('layout') ?>
+<?= $this->section('contenu') ?>
+    
     <?php
     //debut de section
-    $this->extend('layout');
-    $this->section('contenu');
     //import du Form Helper
     helper('form');
     //Création du formulaire AjoutVoyage
