@@ -11,7 +11,7 @@ class ListeRetourClient extends BaseController
         $retourClientModel = new \App\Models\RetourClient();
         $retourClients = $retourClientModel->findAll();
 
-        return view('liste-voyage', [
+        return view('liste-retour-client', [
             'retourClients' => $retourClients // dans le code de la vue, il y aura une variable $clients
         ]);
 
