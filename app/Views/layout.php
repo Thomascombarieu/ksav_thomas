@@ -17,7 +17,7 @@
             <li><a href="liste-voyage">Liste Voyage</a></li>
             <li><a href="liste-client">Liste clients</a></li>
             <li><a href="liste-retour-client">Liste retour clients</a></li>
-            <li><a href="">Ajouter un client</a></li>
+            <li><a href="<?= url_to('Ajouter_Client_Form') ?>">Ajouter un Client</a></li>
             <li><a href="<?= url_to('Ajout_Voyage_Form') ?>">Ajouter un voyage</a></li>
             
             

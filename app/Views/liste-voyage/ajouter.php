@@ -2,12 +2,17 @@
     //debut de section
     $this->extend('layout');
     $this->section('contenu');
+
+
     //import du Form Helper
     helper('form');
+
     //Création du formulaire AjoutVoyage
     echo form_open(url_to('Ajout_Voyage'));
-    echo form_reset('Vider', 'reset');
-
+   
+?>
+<fieldset>
+<?php
     // Input pour le nom du voyage
 
     echo form_label('Nom du Voyage ');
@@ -46,7 +51,9 @@
         'sejour'  => 'Séjour',
         'vol' => 'Vol',
     ];
-
+?>
+</fieldset>
+<?php
     echo form_dropdown('typeVoyage', $options,);
 
     //input destination voyage
@@ -185,6 +192,9 @@
 
     echo form_submit('Valider', 'ajouter');
 
+    echo form_reset('Vider', 'reset'); 
+    
+    
     echo form_close();
 
     $this->endSection();
