@@ -1,4 +1,4 @@
-    <?php
+<?php
     //debut de section
     $this->extend('layout');
     $this->section('contenu');

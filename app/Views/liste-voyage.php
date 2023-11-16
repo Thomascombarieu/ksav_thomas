@@ -15,7 +15,7 @@ foreach ($voyages as $voyage) {
 }
 
 
-$table->setHeading('Code voyage', 'Code_Voyage', 'Description', 'Type de voyage', 'Destination');
+$table->setHeading('ID voyage', 'Code Voyage', 'Description', 'Type de voyage', 'Destination');
 
 
 //  $table->addRow('0001', 'Londres est une ville magnifique ! Même si beaucoup de bâtiments sont en rénovation, la richesse architecturale est propre : <br>les bâtiments sont bien entretenus et les rénovations le prouvent !', 'Séjour', 'Londre');
