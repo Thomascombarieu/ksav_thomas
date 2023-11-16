@@ -15,7 +15,7 @@ $table = new \CodeIgniter\View\Table();
 // print_r($clients);
 // print "</pre>";
 
-foreach ($retourclients as $retourclient) {
+foreach ($retourClients as $retourclient) {
     // echo "<p>$client</p>";
     $table->addRow($retourclient);
 }
