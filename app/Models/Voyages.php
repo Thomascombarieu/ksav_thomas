@@ -4,7 +4,7 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class Voyage extends Model
+class Voyages extends Model
 {
     protected $DBGroup          = 'default';
     protected $table            = 'voyage';
