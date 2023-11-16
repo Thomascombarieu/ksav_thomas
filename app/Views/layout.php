@@ -17,6 +17,8 @@
             <li><a href="liste-voyage">Liste Voyage</a></li>
             <li><a href="liste-client">Liste clients</a></li>
             <li><a href="main.html">Liste retour clients</a></li>
+            <li><a href="main.html">Ajout voyage</a></li>
+            <li><a href="main.html">Ajout client</a></li>
             
             
         </ul>
