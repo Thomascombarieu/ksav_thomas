@@ -42,7 +42,7 @@ nav ul{
 }
 nav li{
     float: left;
-    width: 20%;
+    width: calc(100% / 3);
     text-align: center;
 }
 
