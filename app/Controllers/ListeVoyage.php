@@ -6,7 +6,14 @@ class ListeVoyage extends BaseController
 {
     public function index(): string
     {
-        return view('liste-voyage');
+
+        // récupérer la liste des clients en base -> $clients
+        $voyageModel = new \App\Models\Voyages();
+        $voyages = $voyageModel->findAll();
+
+        return view('liste-voyage', [
+            'voyages' => $voyages // dans le code de la vue, il y aura une variable $clients
+        ]);
 
         
     }
