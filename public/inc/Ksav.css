@@ -27,7 +27,7 @@ nav a{
     display: block;
     text-decoration: none;
     color: black;
-    background-color: violet;
+    background-color: rgb(204, 46, 204);
     border-bottom: 2px solid transparent;
     padding: 10px 0px;
 }
