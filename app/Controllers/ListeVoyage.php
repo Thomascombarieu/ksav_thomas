@@ -55,9 +55,9 @@ class ListeVoyage extends BaseController
         var_dump($lastID);
 
         $prestationVoyageModel = new \App\Models\PrestationVoyage();
-        $prestationVoyageModel->insert([
-            'id_voyage' => $lastID
-        ]);
+        // $prestationVoyageModel->insert([
+        //     'id_voyage' => $lastID
+        // ]);
 
         // foreach($data['prestation'] as $prestation){
         //     $prestationVoyageModel->insert([
