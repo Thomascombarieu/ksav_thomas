@@ -1,5 +1,8 @@
 /* variable de couleur css */
 
+element {
+    --main-bg-color: rgb(4, 0, 39);
+    --border-color: rgb(32, 28, 73);
 
 
 
@@ -8,9 +11,7 @@
 
 
 
-
-
-
+  }
 /* --------Liste_Voyages----------- */
 
 /* th,td{
@@ -25,7 +26,7 @@ table {
     table-layout: fixed;
     width: 100%;
     border-collapse: collapse;
-    border: 3px solid purple;
+    border: 3px solid var(--border-color);
   }
   
   thead th:nth-child(1) {
@@ -124,11 +125,14 @@ div.Lfooter{
 form {
     /* On centre le formulaire */
     margin: 0 auto;
-    width: 400px;
+    width: 1200px;
     /* Le contour du formulaire */
     padding: 1em;
     border: 1px solid #ccc;
     border-radius: 1em;
+  }
+  label{
+    padding: 1%;
   }
   
   ul {
