@@ -17,12 +17,6 @@ foreach ($voyages as $voyage) {
 
 $table->setHeading('ID voyage', 'Code Voyage', 'Description', 'Type de voyage', 'Destination');
 
-
-//  $table->addRow('0001', 'Londres est une ville magnifique ! Même si beaucoup de bâtiments sont en rénovation, la richesse architecturale est propre : <br>les bâtiments sont bien entretenus et les rénovations le prouvent !', 'Séjour', 'Londre');
-//  $table->addRow('0002', 'Blue', 'Circuit', 'Thaïlande');
-
-//  $table->addRow('0004', 'Blue', 'Séjour', 'New-York');
-
 echo $table->generate();
 
 ?>

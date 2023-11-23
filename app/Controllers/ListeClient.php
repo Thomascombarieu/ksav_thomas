@@ -34,7 +34,7 @@ class ListeClient extends BaseController
         print('<pre>');
         print_r($data);
         print('</pre>');
-        die(); 
+        // die(); 
 
         // insertion en base
         $clientModel = new \App\Models\Clients();
@@ -47,9 +47,12 @@ class ListeClient extends BaseController
             'TEL_CLIENT' => $data['telClient'],
             'ADRESSE_CLIENT' => $data['adresseClient']
             
-            
+            // foreach($data[''] as $){}
+        
+        
         ]);
         
+        return'';
 
         // redirection vers... ?
 
