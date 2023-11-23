@@ -42,8 +42,12 @@ class ListeClient extends BaseController
         $clientModel->insert([
             'NOM_CLIENT' => $data['nomClient'],
             'PRENOM_CLIENT' => $data['prenomClient'],
-            'nomcolbd' => $data['????'],
-            'nomcolbd' => $data['????']
+            'DATE_N_CLIENT' => $data['dateClient'],
+            'MAIL_CLIENT' => $data['mailClient'],
+            'TEL_CLIENT' => $data['telClient'],
+            'ADRESSE_CLIENT' => $data['adresseClient']
+            
+            
         ]);
         
 
