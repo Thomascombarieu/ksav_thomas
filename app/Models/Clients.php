@@ -13,7 +13,7 @@ class Clients extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = [];
+    protected $allowedFields    = ['NOM_CLIENT','PRENOM_CLIENT','DATE_N_CLIENT','MAIL_CLIENT','TEL_CLIENT','ADRESSE_CLIENT'];
 
     // Dates
     protected $useTimestamps = false;

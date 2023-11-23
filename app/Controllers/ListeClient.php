@@ -34,7 +34,7 @@ class ListeClient extends BaseController
         print('<pre>');
         print_r($data);
         print('</pre>');
-        die(); 
+        // die(); 
 
         // insertion en base
         $clientModel = new \App\Models\Clients();
@@ -42,10 +42,17 @@ class ListeClient extends BaseController
         $clientModel->insert([
             'NOM_CLIENT' => $data['nomClient'],
             'PRENOM_CLIENT' => $data['prenomClient'],
-            'nomcolbd' => $data['????'],
-            'nomcolbd' => $data['????']
+            'DATE_N_CLIENT' => $data['dateClient'],
+            'MAIL_CLIENT' => $data['mailClient'],
+            'TEL_CLIENT' => $data['telClient'],
+            'ADRESSE_CLIENT' => $data['adresseClient']
+            
+            // foreach($data[''] as $){}
+        
+        
         ]);
         
+        return'';
 
         // redirection vers... ?
 
