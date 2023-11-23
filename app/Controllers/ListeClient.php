@@ -25,4 +25,30 @@ class ListeClient extends BaseController
     {
         return view('liste-client/ajouter');
     }
+
+    public function ajouterClient():string
+    {
+        // récup paramtres post
+        $data = $this->request->getVar();
+
+        print('<pre>');
+        print_r($data);
+        print('</pre>');
+        die(); 
+
+        // insertion en base
+        $clientModel = new \App\Models\Clients();
+
+        $clientModel->insert([
+            'NOM_CLIENT' => $data['nomClient'],
+            'PRENOM_CLIENT' => $data['prenomClient'],
+            'nomcolbd' => $data['????'],
+            'nomcolbd' => $data['????']
+        ]);
+        
+
+        // redirection vers... ?
+
+
+    }
 }
