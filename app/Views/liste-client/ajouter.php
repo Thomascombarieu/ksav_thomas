@@ -40,6 +40,7 @@
 
     echo form_label('Sexe du client');
     $options = [
+        '....'=>'...',
         'homme'  => 'Homme',
         'femme'    => 'Femme',
         'undefined'  => 'Ne pas définir',
