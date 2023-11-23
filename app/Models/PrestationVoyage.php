@@ -4,16 +4,16 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class Voyages extends Model
+class PrestationVoyage extends Model
 {
     protected $DBGroup          = 'default';
-    protected $table            = 'voyage';
+    protected $table            = 'prestation_voyage';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['code_voyage', 'description','type_voyage','destination'];
+    protected $allowedFields    = ['id_voyage', 'id_prestation'];
 
     // Dates
     protected $useTimestamps = false;
