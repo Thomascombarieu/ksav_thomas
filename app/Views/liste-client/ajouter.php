@@ -5,7 +5,7 @@
     //import du Form Helper
     helper('form');
     //Création du formulaire AjoutVoyage
-    echo form_open(url_to('Ajout_Client'));
+    echo form_open(url_to('Ajouter_Client'));
     echo form_reset('Vider', 'reset');
 
     // Input pour le nom du client
