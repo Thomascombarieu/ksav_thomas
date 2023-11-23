@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 
+
 class ListeVoyage extends BaseController
 {
     public function index(): string
@@ -31,5 +32,28 @@ class ListeVoyage extends BaseController
     {
         return view('liste-voyage/modifier');
     }
+    public function ajouter():string
+    {
+        // récup paramtres post
+        $data = $this->request->getVar();
 
+        print('<pre>');
+        print_r($data);
+        print('</pre>');
+        die(); 
+
+        // insertion en base
+        /*
+        $userModel->insert([
+            'nomcolbd' => $data['????'],
+            'nomcolbd' => $data['????'],
+            'nomcolbd' => $data['????'],
+            'nomcolbd' => $data['????']
+        ]);
+        */
+
+        // redirection vers... ?
+
+
+    }
 }

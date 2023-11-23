@@ -73,9 +73,9 @@
     //checkbox pour les prestations (il y en a plusieurs)
     echo form_label('Transfert');
     $transfertForm = [
-        'name'    => 'transfert',
+        'name'    => 'prestation',
         'id'      => 'prestation',
-        //'value'   => 'accept',
+        'value'   => 'Transfert',
         //'checked' => true,
         'style'   => 'margin:10px',
     ];
@@ -85,9 +85,9 @@
     //hotel
     echo form_label('Hôtel');
     $hotelForm = [
-        'name'    => 'hotel',
+        'name'    => '$prestation',
         'id'      => 'prestation',
-        //'value'   => 'accept',
+        'value'   => 'Hotel',
         //'checked' => true,
         'style'   => 'margin:10px',
     ];
@@ -97,9 +97,9 @@
     //Restauration
     echo form_label('Restauration');
     $restaurationForm = [
-        'name'    => 'restauration',
+        'name'    => 'prestation',
         'id'      => 'prestation',
-        //'value'   => 'accept',
+        'value'   => 'Restauration',
         //'checked' => true,
         'style'   => 'margin:10px',
     ];
@@ -109,9 +109,9 @@
     //Service & acceuil
     echo form_label('Service & Accueil');
     $servForm = [
-        'name'    => 'serv',
+        'name'    => 'prestation',
         'id'      => 'prestation',
-        //'value'   => 'accept',
+        'value'   => 'Service',
         //'checked' => true,
         'style'   => 'margin:10px',
     ];
@@ -121,9 +121,9 @@
     //animation
     echo form_label('Animation');
     $animationForm = [
-        'name'    => 'animation',
+        'name'    => 'prestation',
         'id'      => 'prestation',
-        //'value'   => 'accept',
+        'value'   => 'Animation',
         //'checked' => true,
         'style'   => 'margin:10px',
     ];
@@ -133,9 +133,9 @@
     //excursion & guide
     echo form_label('Excursion & guide');
     $guideForm = [
-        'name'    => 'guide',
+        'name'    => 'prestation',
         'id'      => 'prestation',
-        //'value'   => 'accept',
+        'value'   => 'guide',
         //'checked' => true,
         'style'   => 'margin:10px',
     ];
@@ -145,9 +145,9 @@
     //Transport aérien
     echo form_label('Transport Aérien');
     $avionForm = [
-        'name'    => 'avion',
+        'name'    => 'prestation',
         'id'      => 'prestation',
-        //'value'   => 'accept',
+        'value'   => 'Transport',
         //'checked' => true,
         'style'   => 'margin:10px',
     ];
@@ -157,9 +157,9 @@
     //Transport car
     echo form_label('Transport Car');
     $carForm = [
-        'name'    => 'car',
+        'name'    => 'prestation',
         'id'      => 'prestation',
-        //'value'   => 'accept',
+        'value'   => 'Car',
         //'checked' => true,
         'style'   => 'margin:10px',
     ];
@@ -169,9 +169,9 @@
     //Thalasso & spa 
     echo form_label('Thalasso & SPA');
     $spaForm = [
-        'name'    => 'spa',
+        'name'    => 'prestation',
         'id'      => 'prestation',
-        //'value'   => 'accept',
+        'value'   => 'SPA',
         //'checked' => true,
         'style'   => 'margin:10px',
     ];
@@ -181,9 +181,9 @@
     //croisière
     echo form_label('Croisière');
     $croisiereForm = [
-        'name'    => 'croisiere',
+        'name'    => 'prestation',
         'id'      => 'prestation',
-        //'value'   => 'accept',
+        'value'   => 'Croisiere',
         //'checked' => true,
         'style'   => 'margin:10px',
     ];
