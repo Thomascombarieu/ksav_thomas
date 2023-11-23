@@ -43,14 +43,18 @@ class ListeVoyage extends BaseController
         die(); 
 
         // insertion en base
-        /*
-        $userModel->insert([
-            'nomcolbd' => $data['????'],
-            'nomcolbd' => $data['????'],
-            'nomcolbd' => $data['????'],
-            'nomcolbd' => $data['????']
+        $voyageModel = new \App\Models\Voyages();
+        
+        $voyageModel->insert([
+            'code_voyage' => $data['codeVoyage'],
+            'description' => $data['descVoyage'],
+            'type_voyage' => $data['typeVoyage'],
+            'destination' => $data['destVoyage']
         ]);
-        */
+        foreach($data['prestation'] as $prestation){
+            
+        }
+        
 
         // redirection vers... ?
 
