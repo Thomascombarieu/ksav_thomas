@@ -36,17 +36,63 @@
     ];
     echo form_input($prenomClientForm);
 
-    //input select pour type Voyage
+    //date client 
 
-    echo form_label('Sexe du client');
-    $options = [
-        '....'=>'...',
-        'homme'  => 'Homme',
-        'femme'    => 'Femme',
-        'undefined'  => 'Ne pas définir',
+    echo form_label('Date de Naissance du client ');
+    $dateClientForm = [
+        'type'      => 'date',
+        'name'      => 'dateClient',
+        'id'        => 'dateClient',
+        'placeholder' => 'Entrez la date de naissance du Client',
+        //'value'     => set_value('johndoe'),
+        //'maxlength' => '100',
+        'size'      => '50',
+        'style'     => 'width:30%',
     ];
+    echo form_input($dateClientForm);
 
-    echo form_dropdown('sexe-client', $options,);
+    //input select pour mail client
+
+    echo form_label('Mail Client ');
+    $mailClientForm = [
+        'name'      => 'mailClient',
+        'id'        => 'mailClient',
+        'placeholder' => 'Entrez le mail du Client',
+        //'value'     => set_value('johndoe'),
+        //'maxlength' => '100',
+        'size'      => '50',
+        'style'     => 'width:30%',
+    ];
+    echo form_input($mailClientForm);
+
+    //tel client 
+
+    echo form_label('Tel du client ');
+    $telClientForm = [
+        'name'      => 'telClient',
+        'id'        => 'telClient',
+        'placeholder' => 'Entrez le numéro de téléphone du Client',
+        //'value'     => set_value('johndoe'),
+        //'maxlength' => '100',
+        'size'      => '50',
+        'style'     => 'width:30%',
+    ];
+    echo form_input($telClientForm);
+
+    //adresse client 
+
+    echo form_label('Adresse du client ');
+    $adresseClientForm = [
+        'name'      => 'adresseClient',
+        'id'        => 'adresseClient',
+        'placeholder' => "Entrez l'adresse du Client",
+        //'value'     => set_value('johndoe'),
+        //'maxlength' => '100',
+        'size'      => '50',
+        'style'     => 'width:30%',
+    ];
+    echo form_input($adresseClientForm);
+    
 
     //input destination voyage
 

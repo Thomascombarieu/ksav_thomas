@@ -51,7 +51,9 @@ class ListeVoyage extends BaseController
             'type_voyage' => $data['typeVoyage'],
             'destination' => $data['destVoyage']
         ]);
-        
+        foreach($data['prestation'] as $prestation){
+            
+        }
         
 
         // redirection vers... ?
