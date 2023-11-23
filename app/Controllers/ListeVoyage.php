@@ -31,5 +31,5 @@ class ListeVoyage extends BaseController
     {
         return view('liste-voyage/modifier');
     }
-    
+
 }
