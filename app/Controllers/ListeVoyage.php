@@ -40,8 +40,7 @@ class ListeVoyage extends BaseController
         print('<pre>');
         print_r($data);
         print('</pre>');
-        die(); 
-
+        
         // insertion en base
         $voyageModel = new \App\Models\Voyages();
         
@@ -51,11 +50,24 @@ class ListeVoyage extends BaseController
             'TYPE_VOYAGE' => $data['typeVoyage'],
             'DESTINATION' => $data['destVoyage']
         ]);
+
+        $lastID = $voyageModel->getInsertID();
+        var_dump($lastID);
+
+        $prestationVoyageModel = new \App\Models\PrestationVoyage();
+        // $prestationVoyageModel->insert([
+        //     'id_voyage' => $lastID
+        // ]);
+
         // foreach($data['prestation'] as $prestation){
-            
+        //     $prestationVoyageModel->insert([
+        //         'id_voyage' => $lastID,
+        //         'id_prestation' => $prestation 
+        //     ]);
+
         // }
-        
         return'';
+
         // redirection vers... ?
 
 

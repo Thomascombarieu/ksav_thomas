@@ -16,10 +16,11 @@ helper('html');
         <ul>
 
             <li><a href="<?= url_to('Liste_Voyage') ?>">Liste Voyage</a></li>
-            <li><a href="<?= url_to('Liste_Client') ?>">Liste clients</a></li>
-            <li><a href="<?= url_to('Liste_Retour_Client') ?>">Liste retour clients</a></li>
-            <li><a href="<?= url_to('Ajouter_Client_Form') ?>">Ajouter un Client</a></li>
             <li><a href="<?= url_to('Ajout_Voyage_Form') ?>">Ajouter un voyage</a></li>
+            <li><a href="<?= url_to('Liste_Client') ?>">Liste clients</a></li>
+            <li><a href="<?= url_to('Ajouter_Client_Form') ?>">Ajouter un Client</a></li>
+            <li><a href="<?= url_to('Liste_Retour_Client') ?>">Liste retour clients</a></li>
+            <li><a href="<?= url_to('Ajout_Retour_Client_Form') ?>">Ajouter un retour client</a></li>
         
             
             

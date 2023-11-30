@@ -75,7 +75,7 @@
     $transfertForm = [
         'name'    => 'prestation[]',
         // 'id'      => 'prestation',
-        'value'   => 'Transfert',
+        'value'   => '1',
         //'checked' => true,
         'style'   => 'margin:10px',
     ];
@@ -87,7 +87,7 @@
     $hotelForm = [
         'name'    => 'prestation[]',
         // 'id'      => 'prestation',
-        'value'   => 'Hotel',
+        'value'   => '2',
         //'checked' => true,
         'style'   => 'margin:10px',
     ];
@@ -99,7 +99,7 @@
     $restaurationForm = [
         'name'    => 'prestation[]',
         // 'id'      => 'prestation',
-        'value'   => 'Restauration',
+        'value'   => '3',
         //'checked' => true,
         'style'   => 'margin:10px',
     ];
@@ -111,7 +111,7 @@
     $servForm = [
         'name'    => 'prestation[]',
         // 'id'      => 'prestation',
-        'value'   => 'Service',
+        'value'   => '4',
         //'checked' => true,
         'style'   => 'margin:10px',
     ];
@@ -123,7 +123,7 @@
     $animationForm = [
         'name'    => 'prestation[]',
         // 'id'      => 'prestation',
-        'value'   => 'Animation',
+        'value'   => '5',
         //'checked' => true,
         'style'   => 'margin:10px',
     ];
@@ -135,7 +135,7 @@
     $guideForm = [
         'name'    => 'prestation[]',
         // 'id'      => 'prestation',
-        'value'   => 'guide',
+        'value'   => '6',
         //'checked' => true,
         'style'   => 'margin:10px',
     ];
@@ -147,7 +147,7 @@
     $avionForm = [
         'name'    => 'prestation[]',
         // 'id'      => 'prestation',
-        'value'   => 'Transport',
+        'value'   => '7',
         //'checked' => true,
         'style'   => 'margin:10px',
     ];
@@ -159,7 +159,7 @@
     $carForm = [
         'name'    => 'prestation[]',
         // 'id'      => 'prestation',
-        'value'   => 'Car',
+        'value'   => '8',
         //'checked' => true,
         'style'   => 'margin:10px',
     ];
@@ -171,7 +171,7 @@
     $spaForm = [
         'name'    => 'prestation[]',
         // 'id'      => 'prestation',
-        'value'   => 'SPA',
+        'value'   => '9',
         //'checked' => true,
         'style'   => 'margin:10px',
     ];
@@ -183,7 +183,7 @@
     $croisiereForm = [
         'name'    => 'prestation[]',
         // 'id'      => 'prestation',
-        'value'   => 'Croisiere',
+        'value'   => '10',
         //'checked' => true,
         'style'   => 'margin:10px',
     ];
