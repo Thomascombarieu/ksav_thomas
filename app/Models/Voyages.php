@@ -13,7 +13,7 @@ class Voyages extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['code_voyage', 'description','type_voyage','destination'];
+    protected $allowedFields    = ['CODE_VOYAGE', 'DESCRIPTION','TYPE_VOYAGE','DESTINATION'];
 
     // Dates
     protected $useTimestamps = false;
