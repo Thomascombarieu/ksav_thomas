@@ -46,16 +46,16 @@ class ListeVoyage extends BaseController
         $voyageModel = new \App\Models\Voyages();
         
         $voyageModel->insert([
-            'code_voyage' => $data['codeVoyage'],
-            'description' => $data['descVoyage'],
-            'type_voyage' => $data['typeVoyage'],
-            'destination' => $data['destVoyage']
+            'CODE_VOYAGE' => $data['codeVoyage'],
+            'DESCRIPTION' => $data['descVoyage'],
+            'TYPE_VOYAGE' => $data['typeVoyage'],
+            'DESTINATION' => $data['destVoyage']
         ]);
-        foreach($data['prestation'] as $prestation){
+        // foreach($data['prestation'] as $prestation){
             
-        }
+        // }
         
-
+        return'';
         // redirection vers... ?
 
 

@@ -47,9 +47,7 @@ class ListeClient extends BaseController
             'TEL_CLIENT' => $data['telClient'],
             'ADRESSE_CLIENT' => $data['adresseClient']
             
-            // foreach($data[''] as $){}
-        
-        
+                    
         ]);
         
         return'';

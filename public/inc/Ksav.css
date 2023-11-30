@@ -1,8 +1,8 @@
 /* variable de couleur css */
 
 element {
-    --main-bg-color: rgb(4, 0, 39);
-    --border-color: rgb(32, 28, 73);
+  --main-bg-color: rgb(4, 0, 39);
+  --border-color: rgb(32, 28, 73);
 
 
 
@@ -10,7 +10,8 @@ element {
 
 
 
-  }
+}
+
 /* --------Liste_Voyages----------- */
 
 /* th,td{
@@ -18,17 +19,28 @@ element {
 	padding:10px;
 	text-align:center;
 /* } 
-/* css tableau  */ 
+
+
+
+/* css tableau  */
 
 table {
-    margin-top: 20px;
-    table-layout: fixed;
-    width: 100%;
-    border-collapse: collapse;
-    border: 3px solid var(--border-color);
-  }
+  margin-top: 20px;
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 3px solid var(--border-color);
+  margin: auto;
+}
+
+th,td{
+	border:1px solid black;
+	/* padding:10px; */
+	text-align:center;
   
-  thead th:nth-child(1) {
+}
+
+/* thead th:nth-child(1) {
     width: 30%;
   }
   
@@ -42,79 +54,85 @@ table {
   
   thead th:nth-child(4) {
     width: 35%;
-  }
-  
-  th,
-  td {
-    
-    padding: 20px;
-  }
-  th {
-    letter-spacing: 2px;
-  }
-  
-  td {
-    letter-spacing: 1px;
-  }
-  
-  tbody td {
-    text-align: center;
-  }
-  
-  tfoot th {
-    text-align: right;
-  }
+  } */
+
+th,
+td {
+
+  padding: 20px;
+}
+
+th {
+  letter-spacing: 2px;
+}
+
+td {
+  letter-spacing: 1px;
+}
+
+tbody td {
+  text-align: center;
+}
+
+tfoot th {
+  text-align: right;
+}
 
 /* --------------Layout------------- */
 
 /* initialisation css */
-*{
-    margin: 0%;
-    padding: 0%;
-    transition: .5s;
+* {
+  margin: 0%;
+  padding: 0%;
+  transition: .5s;
 }
+
 /*CSS pour le header du layout*/
-nav{
-    width: 100%;
-    margin: 0 auto;
-    background-color: white;
-    position: sticky;
-    top: 0px;
-}
-nav a{
-    display: block;
-    text-decoration: none;
-    color: black;
-    background-color: rgb(204, 46, 204);
-    border-bottom: 2px solid transparent;
-    padding: 10px 0px;
-}
-nav a:hover{
-    color: blueviolet;
-    border-bottom: 2px solid palevioletred;
-    background-color: plum;
-}
-nav ul{
-    list-style-type:none;
-
-}
-nav li{
-    float: left;
-    width: 20%;
-    text-align: center;
+nav {
+  width: 100%;
+  margin: 0 auto;
+  background-color: white;
+  position: sticky;
+  top: 0px;
 }
 
-nav ul::after{
-    content: "";
-    display: table;
-    clear: both;
+nav a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  background-color: rgb(204, 46, 204);
+  border-bottom: 2px solid transparent;
+  padding: 10px 0px;
+}
+
+nav a:hover {
+  color: blueviolet;
+  border-bottom: 2px solid palevioletred;
+  background-color: plum;
+}
+
+nav ul {
+  list-style-type: none;
+
+}
+
+nav li {
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+
+nav ul::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /*CSS pour le footer du layout*/
-div.Lfooter{
-    background-color: blueviolet;
-    text-align: center;
-    width: 100%;
+div.Lfooter {
+  background-color: blueviolet;
+  text-align: center;
+  width: 100%;
 
 }
 
@@ -122,78 +140,80 @@ div.Lfooter{
 /* CSS pour le formulaire */
 
 form {
-    /* On centre le formulaire */
-    margin: 0 auto;
-    width: 1200px;
-    /* Le contour du formulaire */
-    padding: 1em;
-    border: 1px solid #ccc;
-    border-radius: 1em;
-  }
-  label{
-    padding: 1%;
-  }
-  
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  form li + li {
-    margin-top: 1em;
-  }
-  
-  label {
-    /* Taille et alignement uniformes */
-    display: inline-block;
-    width: 90px;
-    text-align: right;
-  }
-  
-  input,
-  textarea {
-    /* On s'assure que les champs texte ont la même police
+  /* On centre le formulaire */
+  margin: 0 auto;
+  width: 1200px;
+  /* Le contour du formulaire */
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+}
+
+label {
+  padding: 1%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form li+li {
+  margin-top: 1em;
+}
+
+label {
+  /* Taille et alignement uniformes */
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+
+input,
+textarea {
+  /* On s'assure que les champs texte ont la même police
        Par défaut, les zones de texte ont une police à chasse
        fixe. */
-    font: 1em sans-serif;
-  
-    /* Taille uniforme pour des champs */
-    width: 300px;
-    box-sizing: border-box;
-  
-    /* On utilise la même bordure que pour le formulaire */
-    border: 1px solid #999;
-  }
-  
-  input:focus,
-  textarea:focus {
-    /* On rajoute une mise en avant pour les éléments avec
+  font: 1em sans-serif;
+
+  /* Taille uniforme pour des champs */
+  width: 300px;
+  box-sizing: border-box;
+
+  /* On utilise la même bordure que pour le formulaire */
+  border: 1px solid #999;
+}
+
+input:focus,
+textarea:focus {
+  /* On rajoute une mise en avant pour les éléments avec
        le focus. */
-    border-color: #000;
-  }
-  
-  textarea {
-    /* On aligne les textes sur plusieurs lignes avec leur
+  border-color: #000;
+}
+
+textarea {
+  /* On aligne les textes sur plusieurs lignes avec leur
        libellé. */
-    vertical-align: top;
-  
-    /* On fournit un peut d'espace pour saisir du texte. */
-    height: 5em;
-  
-    /* On permet de redimensionner verticalement. */
-    resize: vertical;
-  }
-  
-  .button {
-    /* On aligne les boutons avec les champs texte. */
-    padding-left: 90px; /* La même taille que les libellés */
-  }
-  
-  button {
-    /* Une marge supplémentaire représentant approximativement
+  vertical-align: top;
+
+  /* On fournit un peut d'espace pour saisir du texte. */
+  height: 5em;
+
+  /* On permet de redimensionner verticalement. */
+  resize: vertical;
+}
+
+.button {
+  /* On aligne les boutons avec les champs texte. */
+  padding-left: 90px;
+  /* La même taille que les libellés */
+}
+
+button {
+  /* Une marge supplémentaire représentant approximativement
        le même espace qu'entre les libellés et les champs. */
-    margin-left: 0.5em;
-  }
+  margin-left: 0.5em;
+}
 
 /* ------------------------------------ */
