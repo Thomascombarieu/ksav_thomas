@@ -8,14 +8,16 @@
 $table = new \CodeIgniter\View\Table();
 // $php_Button = new button;
 
-
 foreach ($voyages as $voyage) {
     // echo "<p>$client</p>";
+    
+
+
     $table->addRow($voyage);
 }
 
 
-$table->setHeading('ID voyage', 'Code Voyage', 'Description', 'Type de voyage', 'Destination', 'retour_client');
+$table->setHeading('ID voyage', 'Code Voyage', 'Description', 'Type de voyage', 'Destination');
 
 echo $table->generate();
 

@@ -14,14 +14,34 @@
 
 <?php
 
+$listeClient= array();
+
+foreach($clients as $client){
+    $nomclient= $client['ID_CLIENT']+' '+$client['NOM_CLIENT']+' '+$client['PRENOM_CLIENT'];
+
+    
+
+    array_push($listeClient, $nomclient);
+    
+
+}
+
     //données du voyage chargée
 
-    echo form_label('Client ');
+    echo form_label('Client');
+    $options = [
+        //mettre foreach pour choix du client 
+        
+    ];
+
+    echo form_dropdown('Client', $options,);
+
+    echo form_label('Voyage');
     $options = [
         //mettre foreach pour choix du client 
     ];
 
-    echo form_dropdown('Client', $options,);
+    echo form_dropdown('Voyage', $options,);
 
 
 

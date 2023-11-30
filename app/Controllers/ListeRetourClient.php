@@ -24,14 +24,14 @@ class ListeRetourClient extends BaseController
         $clients = $clientModel->findAll();
 
         $voyageModel = new \App\Models\Voyages();
-        $voyage = $voyageModel->where('');
+        $voyages = $voyageModel->findAll();
 
 
 
 
 
 
-        return view('liste-retour-client/ajouter',['clients' => $clients, 'voyage' => $voyage]);
+        return view('liste-retour-client/ajouter',['clients' => $clients, 'voyages' => $voyages]);
     }
 
     public function modifierForm(): string
