@@ -15,6 +15,8 @@ class ListeVoyage extends BaseController
         return view('liste-voyage', [
             'voyages' => $voyages // dans le code de la vue, il y aura une variable $clients
         ]);
+
+        
     }
 
     public function ajouterForm(): string
@@ -30,7 +32,7 @@ class ListeVoyage extends BaseController
     {
         return view('liste-voyage/modifier');
     }
-    public function ajouter(): string
+    public function ajouter():string
     {
         // récup paramtres post
         $data = $this->request->getVar();
@@ -38,18 +40,17 @@ class ListeVoyage extends BaseController
         print('<pre>');
         print_r($data);
         print('</pre>');
-
+        
         // insertion en base
         $voyageModel = new \App\Models\Voyages();
-
+        
         $voyageModel->insert([
-            'CODE_VOYAGE' => $data['codeVoyage'],
-            'DESCRIPTION' => $data['descVoyage'],
-            'TYPE_VOYAGE' => $data['typeVoyage'],
-            'DESTINATION' => $data['destVoyage']
+            'code_voyage' => $data['codeVoyage'],
+            'description' => $data['descVoyage'],
+            'type_voyage' => $data['typeVoyage'],
+            'destination' => $data['destVoyage']
         ]);
 
-        
         $lastID = $voyageModel->getInsertID();
         var_dump($lastID);
 
@@ -58,15 +59,16 @@ class ListeVoyage extends BaseController
         //     'id_voyage' => $lastID
         // ]);
 
-        foreach ($data['prestation'] as $prestation) {
-            $prestationVoyageModel->insert([
-                'id_voyage' => $lastID,
-                'id_prestation' => $prestation
-            ]);
-        }
-        
+        // foreach($data['prestation'] as $prestation){
+        //     $prestationVoyageModel->insert([
+        //         'id_voyage' => $lastID,
+        //         'id_prestation' => $prestation 
+        //     ]);
 
-        return '';
+        // }
+        return'';
+
+        // redirection vers... ?
 
 
     }

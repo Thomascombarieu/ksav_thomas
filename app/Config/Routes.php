@@ -40,8 +40,8 @@ $routes->post('liste-client/ajout-client', 'ListeClient::ajouterClient', ['as' =
 //route pour la page ajout client 
 
 //$routes->get('ajouter-retour-client-voyage','AjouterRetourClientVoyage::index');
-$routes->get('ajouter-retour-client-voyage', 'AjouterRetourClientVoyage::ajouterForm', ['as' => 'Ajout_Retour_Client_Form']);
-$routes->post('ajouter-retour-client-voyage', 'AjouterRetourClientVoyage::ajouter', ['as' => 'Ajout_Retour_Client']);
+$routes->get('ajouter-retour-client-voyage', 'ListeRetourClient::ajouterForm', ['as' => 'Ajout_Retour_Client_Form']);
+$routes->post('ajouter-retour-client-voyage', 'ListeRetourClient::ajouter', ['as' => 'Ajout_Retour_Client']);
 
 //route de base (page index)
 

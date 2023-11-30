@@ -20,11 +20,27 @@ class ListeRetourClient extends BaseController
 
     public function ajouterForm(): string
     {
-        return view('liste-voyage/ajouter');
+        $clientModel = new \App\Models\Clients();
+        $clients = $clientModel->findAll();
+
+        $voyageModel = new \App\Models\Voyages();
+        $voyage = $voyageModel->where('');
+
+
+
+
+
+
+        return view('liste-retour-client/ajouter',['clients' => $clients, 'voyage' => $voyage]);
     }
 
     public function modifierForm(): string
     {
-        return view('liste-voyage/modifier');
+
+
+
+
+
+        return view('liste-retour-client/modifier');
     }
 }

@@ -15,7 +15,7 @@ foreach ($voyages as $voyage) {
 }
 
 
-$table->setHeading('ID voyage', 'Code Voyage', 'Description', 'Type de voyage', 'Destination');
+$table->setHeading('ID voyage', 'Code Voyage', 'Description', 'Type de voyage', 'Destination', 'retour_client');
 
 echo $table->generate();
 
