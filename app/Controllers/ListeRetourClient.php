@@ -34,6 +34,9 @@ class ListeRetourClient extends BaseController
         return view('liste-retour-client/ajouter',['clients' => $clients, 'voyages' => $voyages]);
     }
 
+
+    //méthode pour l'ajout de retour client en base de donnée
+
     public function modifierForm(): string
     {
 
