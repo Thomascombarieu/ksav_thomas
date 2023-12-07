@@ -14,35 +14,51 @@
 
 <?php
 
-$listeClient= array();
+$listeClients= array();
+$listeVoyages= array();
 
 foreach($clients as $client){
     $nomclient= $client['ID_CLIENT'].' '.$client['NOM_CLIENT'].' '.$client['PRENOM_CLIENT'];
 
     
 
-    array_push($listeClient, $nomclient);
+    array_push($listeClients, $nomclient);
+}
+
+foreach($voyages as $voyage){
+    $nomVoyage= $voyage['ID_VOYAGE'].' '.$voyage['CODE_VOYAGE'].' '.$voyage['DESCRIPTION'];
+
     
 
+    array_push($listeVoyages, $nomVoyage);
 }
-var_dump($listeClient);
+
+
+var_dump($listeClients);
+var_dump($listeVoyages);
+
 
     //données du voyage chargée
 
-    echo form_label('Client');
-    $options = [
-        //mettre foreach pour choix du client 
+    ?>
+    <select name="client">
+        <?php
+        foreach($listeClients as $listeclient){
+            echo "<option value=$client[ID_CLIENT]>$listeclient</option>";
+        }
+
+        ?>
+
+    </select>
+    <select name="voyage">
+        <?php
+        foreach($listeVoyages as $listeVoyage){
+            echo "<option value=$voyage[ID_VOYAGE]>$listeVoyage</option>";
+        }
+        ?>
+    </select>
+    <?php
         
-    ];
-
-    echo form_dropdown('Client', $options,);
-
-    echo form_label('Voyage');
-    $options = [
-        //mettre foreach pour choix du client 
-    ];
-
-    echo form_dropdown('Voyage', $options,);
 
 
 
