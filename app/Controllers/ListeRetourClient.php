@@ -26,16 +26,44 @@ class ListeRetourClient extends BaseController
         $voyageModel = new \App\Models\Voyages();
         $voyages = $voyageModel->findAll();
 
-
-
-
-
-
         return view('liste-retour-client/ajouter',['clients' => $clients, 'voyages' => $voyages]);
     }
+        //méthode pour l'ajout de retour client en base de donnée
+
+    public function ajouter():string
+    {
+        // récup paramtres post
+        $data = $this->request->getVar();
+
+        print('<pre>');
+        print_r($data);
+        print('</pre>');
+        
+        // insertion en base
+        $retourclientModel = new \App\Models\RetourClient();
+        
+        $retourclientModel->insert([
+            'NUM_RESERVATION' => $data['....'],
+            'DATE_DEPART' => $data['...'],
+            'VILLE_DEPART' => $data['...']
+        ]);
+
+        $lastID = $retourclientModel->getInsertID();
+        var_dump($lastID);
+       
+        return'';
+
+        // redirection vers... ?
 
 
-    //méthode pour l'ajout de retour client en base de donnée
+    }
+
+    
+
+
+
+
+
 
     public function modifierForm(): string
     {
