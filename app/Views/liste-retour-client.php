@@ -21,7 +21,7 @@ foreach ($retourClients as $retourclient) {
 }
 
 
-$table->setHeading('ID client','Numéro de réservation' ,'Date de départ', 'Ville de départ');
+$table->setHeading('Id retour client','Id Voyage','ID client','Numéro de réservation' ,'Date de départ', 'Ville de départ');
 
 
 echo $table->generate();

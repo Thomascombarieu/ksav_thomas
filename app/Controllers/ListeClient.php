@@ -26,6 +26,12 @@ class ListeClient extends BaseController
         return view('liste-client/ajouter');
     }
 
+
+    public function modifierClientForm(): String
+    {
+        return view('liste-client/ajouter');
+    }
+
     public function ajouterClient():string
     {
         // récup paramtres post

@@ -28,6 +28,9 @@ $routes->get('liste-retour-client', 'ListeRetourClient::index', ['as' => 'Liste_
 $routes->get('liste-client', 'ListeClient::index', ['as' => 'Liste_Client']);
 $routes->get('liste-client/ajouter', 'ListeClient::ajouterClientForm', ['as' => 'Ajouter_Client_Form']);
 $routes->post('liste-client/ajout-client', 'ListeClient::ajouterClient', ['as' => 'Ajouter_Client']);
+$routes->get('liste-client/modifier', 'ListeClient::modifierClientForm', ['as' => 'Modifier_Client_Form']);
+$routes->post('liste-client/modifier-client', 'ListeClient::modifierClient', ['as' => 'Modifier_Client']);
+
 
 //route de la page ajout et modification voyage (déja présente sur liste voyage mais a vérifier)
 
