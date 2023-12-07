@@ -1,5 +1,8 @@
 <?php
     //debut de section
+
+use App\Models\Prestation;
+
     $this->extend('layout');
     $this->section('contenu');
 
@@ -34,8 +37,9 @@ foreach($voyages as $voyage){
 }
 
 
-var_dump($listeClients);
-var_dump($listeVoyages);
+// var_dump($listeClients);
+// var_dump($listeVoyages);
+var_dump($prestations);
 
 
     //données du voyage chargée
@@ -58,26 +62,59 @@ var_dump($listeVoyages);
         ?>
     </select>
     <?php
-        
+        echo form_label('N° réservation ');
+        $numreservationForm = [
+            'name'      => 'numreservation',
+            'id'        => 'numreservation',
+            'placeholder' => 'Entrez le numero de reservation du voyage',
+            //'value'     => set_value('johndoe'),
+            //'maxlength' => '100',
+            'size'      => '50',
+            'style'     => 'width:30%',
+        ];
+        echo form_input($numreservationForm);
 
+        echo form_label('Date de départ ');
+    $dateDepartForm = [
+        'type'      => 'date',
+        'name'      => 'dateDepart',
+        'id'        => 'dateDepart',
+        'placeholder' => 'Entrez la date de départ du Client',
+        //'value'     => set_value('johndoe'),
+        //'maxlength' => '100',
+        'size'      => '50',
+        'style'     => 'width:30%',
+    ];
+    echo form_input($dateDepartForm);
+
+        echo form_label('Ville de départ ');
+    $villeDepartForm = [
+        'name'      => 'villeDepart',
+        'id'        => 'villeDepart',
+        'placeholder' => 'Entrez la ville de départ',
+        //'value'     => set_value('johndoe'),
+        //'maxlength' => '100',
+        'size'      => '50',
+        'style'     => 'width:30%',
+    ];
+    echo form_input($villeDepartForm);
 
 
     //foreach des prestation
-    // foreach($datas as $data){
-    //     echo form_label($data['libelle'] );
-    //     $data = [
-    //     'name'      => $data['name'],
-    //     'id'        => $data['id'],
-    //     'placeholder' => 'note sur 3',
-    //     'value'     => set_value('0'),
-    //     'maxlength' => '2',
-    //     'size'      => '10',
-    //     'style'     => 'width:30%',
-    // ];
-    // echo form_input($data);
+    foreach($prestations as $prestation){
+        echo form_label($prestation['LIBELLE_PRESTATION'] );
+        $prestation['ID_PRESTATION'] = [
+        'name'      => 'notePresta[]',
+        'id'        => $prestation['ID_PRESTATION'],
+        // 'placeholder' => 'note sur 3',
+        // 'value'     => $prestation['ID_PRESTATION'],
+        // 'maxlength' => '2',
+        // 'size'      => '5',
+        'style'     => 'width:20%',
+    ];
+    echo form_input($prestation['ID_PRESTATION']);
 
-    //      }
-
+         }
     
     
     

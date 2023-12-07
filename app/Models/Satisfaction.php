@@ -4,16 +4,16 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class RetourClient extends Model
+class Satisfaction extends Model
 {
     protected $DBGroup          = 'default';
-    protected $table            = 'retour_client';
+    protected $table            = 'prestation';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['ID_VOYAGE','ID_CLIENT','NUM_RESERVATION','DATE_DEPART','VILLE_DEPART'];
+    protected $allowedFields    = ['ID_PRESTATION', 'ID_RETOUR_CLIENT','SATISFACTION_PRESTATION_CLIENT'];
 
     // Dates
     protected $useTimestamps = false;
