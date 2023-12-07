@@ -37,9 +37,9 @@ class ListeVoyage extends BaseController
         // récup paramtres post
         $data = $this->request->getVar();
 
-        print('<pre>');
-        print_r($data);
-        print('</pre>');
+        // print('<pre>');
+        // print_r($data);
+        // print('</pre>');
         
         // insertion en base
         $voyageModel = new \App\Models\Voyages();
