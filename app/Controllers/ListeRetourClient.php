@@ -69,7 +69,7 @@ class ListeRetourClient extends BaseController
         $lastID = $retourclientModel->getInsertID();
         var_dump($lastID);
        
-        $satisfactionModel = new \App\Models\PrestationVoyage();
+        $satisfactionModel = new \App\Models\Satisfaction();
         // $satisfactionModel->insert([
         //     'id_retour_client' => $lastID
         // ]);
@@ -77,7 +77,8 @@ class ListeRetourClient extends BaseController
         foreach($data['notePresta'] as $prestation){
             $satisfactionModel->insert([
                 'id_retour_client' => $lastID,
-                'id_prestation' => $prestation 
+                'id_prestation' => $prestation,
+                'satisfaction_prestation_client' => $prestation 
             ]);
 
         }
