@@ -12,6 +12,10 @@ class ListeVoyage extends BaseController
         $voyageModel = new \App\Models\Voyages();
         $voyages = $voyageModel->findAll();
 
+        // print('<pre>');
+        // print_r($voyages);
+        // print('</pre>');
+
         return view('liste-voyage', [
             'voyages' => $voyages // dans le code de la vue, il y aura une variable $clients
         ]);
@@ -30,7 +34,22 @@ class ListeVoyage extends BaseController
 
     public function modifierForm(): string
     {
-        return view('liste-voyage/modifier');
+        // recup id
+        $id_Voyage= $this ->request->getVar("id");
+        
+
+        // recup données voyage+prestation à partir du modèle 
+
+        // recup table prestation => slect simple (get())
+
+        $data = [
+            //...données du voyage...
+            'prestations' => [
+                // ...?
+            ]
+        ];
+
+        return view('liste-voyage/modifier', $data); // fournir les données récupérées (en 2ème parametre) 
     }
     public function ajouter():string
     {

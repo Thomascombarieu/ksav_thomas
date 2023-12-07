@@ -8,6 +8,8 @@
     echo form_open(url_to('Modifier_Voyage'));
     echo form_reset('Vider', 'reset');
 
+      
+
     // Input pour le nom du voyage
 
     echo form_label('Nom du Voyage ');
@@ -15,7 +17,7 @@
         'name'      => 'nomVoyage',
         'id'        => 'nomVoyage',
         'placeholder' => 'Entrez le nom du voyage',
-        'value'     => set_value('Test'),
+        'value'     => 'ici le nom du voyage récupéré en base',
         //'maxlength' => '100',
         'size'      => '50',
         'style'     => 'width:30%',
@@ -29,7 +31,7 @@
         'name'      => 'descVoyage',
         'id'        => 'descVoyage',
         'placeholder' => 'Entrez la description du voyage',
-        'value'     => set_value('voyage voyage ~ ~ ~'),
+        'value'     => 'ici on doit mettre la description récupérée en base',
         //'maxlength' => '100',
         'size'      => '50',
         'style'     => 'width:30%',
@@ -46,7 +48,7 @@
         'vol' => 'Vol',
     ];
 
-    echo form_dropdown('typeVoyage', $options,);
+    echo form_dropdown('typeVoyage', $options,); // utiliser donnée récupérée pour mettre l'option sélectionnée
 
     //input destination voyage
 
@@ -55,7 +57,7 @@
         'name'      => 'destVoyage',
         'id'        => 'destVoyage',
         'placeholder' => 'Entrez la destination du voyage',
-        'value'     => set_value('Paris'),
+        'value'     => 'ici on doit mettre la destination récupérée en base',
         //'maxlength' => '100',
         'size'      => '50',
         'style'     => 'width:30%',
@@ -68,7 +70,7 @@
         'name'    => 'transfert',
         'id'      => 'prestation',
         // 'value'   => 'accept',
-        'checked' => true,
+        'checked' => true, // si $prestations[???] existe alors true sinon false
         'style'   => 'margin:10px',
     ];
 
@@ -80,7 +82,7 @@
         'name'    => 'hotel',
         'id'      => 'prestation',
         // 'value'   => 'accept',
-        'checked' => false,
+        'checked' => true, // si $prestations[???] existe alors true sinon false
         'style'   => 'margin:10px',
     ];
 
@@ -92,7 +94,7 @@
         'name'    => 'restauration',
         'id'      => 'prestation',
         //'value'   => 'accept',
-        'checked' => true,
+        'checked' => true, // si $prestations[???] existe alors true sinon false
         'style'   => 'margin:10px',
     ];
 
@@ -104,7 +106,7 @@
         'name'    => 'serv',
         'id'      => 'prestation',
         //'value'   => 'accept',
-        'checked' => true,
+        'checked' => true, // si $prestations[???] existe alors true sinon false
         'style'   => 'margin:10px',
     ];
 
@@ -116,7 +118,7 @@
         'name'    => 'animation',
         'id'      => 'prestation',
         //'value'   => 'accept',
-        'checked' => true,
+        'checked' => true, // si $prestations[???] existe alors true sinon false
         'style'   => 'margin:10px',
     ];
 
@@ -128,7 +130,7 @@
         'name'    => 'guide',
         'id'      => 'prestation',
         //'value'   => 'accept',
-        'checked' => false,
+        'checked' => true, // si $prestations[???] existe alors true sinon false
         'style'   => 'margin:10px',
     ];
 
@@ -140,7 +142,7 @@
         'name'    => 'avion',
         'id'      => 'prestation',
         //'value'   => 'accept',
-        'checked' => true,
+        'checked' => true, // si $prestations[???] existe alors true sinon false
         'style'   => 'margin:10px',
     ];
 
@@ -152,7 +154,7 @@
         'name'    => 'car',
         'id'      => 'prestation',
         //'value'   => 'accept',
-        'checked' => true,
+        'checked' => true, // si $prestations[???] existe alors true sinon false
         'style'   => 'margin:10px',
     ];
 
@@ -164,7 +166,7 @@
         'name'    => 'spa',
         'id'      => 'prestation',
         //'value'   => 'accept',
-        'checked' => true,
+        'checked' => true, // si $prestations[???] existe alors true sinon false
         'style'   => 'margin:10px',
     ];
 
@@ -176,7 +178,7 @@
         'name'    => 'croisiere',
         'id'      => 'prestation',
         //'value'   => 'accept',
-        'checked' => true,
+        'checked' => true, // si $prestations[???] existe alors true sinon false
         'style'   => 'margin:10px',
     ];
 
