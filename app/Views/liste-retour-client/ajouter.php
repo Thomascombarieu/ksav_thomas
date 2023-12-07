@@ -17,7 +17,7 @@
 $listeClient= array();
 
 foreach($clients as $client){
-    $nomclient= $client['ID_CLIENT']+' '+$client['NOM_CLIENT']+' '+$client['PRENOM_CLIENT'];
+    $nomclient= $client['ID_CLIENT'].' '.$client['NOM_CLIENT'].' '.$client['PRENOM_CLIENT'];
 
     
 
@@ -25,6 +25,7 @@ foreach($clients as $client){
     
 
 }
+var_dump($listeClient);
 
     //données du voyage chargée
 
