@@ -13,7 +13,7 @@ class RetourClient extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = [];
+    protected $allowedFields    = ['ID_VOYAGE','ID_CLIENT','NUM_RESERVATION','DATE_DEPART','VILLE_DEPART'];
 
     // Dates
     protected $useTimestamps = false;

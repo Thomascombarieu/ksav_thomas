@@ -59,13 +59,13 @@ class ListeVoyage extends BaseController
         //     'id_voyage' => $lastID
         // ]);
 
-        // foreach($data['prestation'] as $prestation){
-        //     $prestationVoyageModel->insert([
-        //         'id_voyage' => $lastID,
-        //         'id_prestation' => $prestation 
-        //     ]);
+        foreach($data['prestation'] as $prestation){
+            $prestationVoyageModel->insert([
+                'id_voyage' => $lastID,
+                'id_prestation' => $prestation 
+            ]);
 
-        // }
+        }
         return'';
 
         // redirection vers... ?

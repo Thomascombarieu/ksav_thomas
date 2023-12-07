@@ -2,6 +2,8 @@
 
 namespace App\Controllers;
 
+use App\Models\Prestation;
+
 class ListeRetourClient extends BaseController
 {
     public function index(): string
@@ -28,9 +30,11 @@ class ListeRetourClient extends BaseController
         $voyageModel = new \App\Models\Voyages();
         $voyages = $voyageModel->findAll();
 
+         
+
         // model prestation + recup bdd
-
-
+        $prestationModel = new \App\Models\Prestation();
+        $prestations = $prestationModel->findAll();
 
         //model prestation voyagev + recup bdd
         $prestationVoyageModel = new \App\Models\PrestationVoyage();
@@ -38,7 +42,7 @@ class ListeRetourClient extends BaseController
 
 
 
-        return view('liste-retour-client/ajouter',['clients' => $clients, 'voyages' => $voyages]);
+        return view('liste-retour-client/ajouter',['clients' => $clients, 'voyages' => $voyages, 'prestations' => $prestations]);
     }
         //méthode pour l'ajout de retour client en base de donnée
 
@@ -55,14 +59,29 @@ class ListeRetourClient extends BaseController
         $retourclientModel = new \App\Models\RetourClient();
         
         $retourclientModel->insert([
-            'NUM_RESERVATION' => $data['....'],
-            'DATE_DEPART' => $data['...'],
-            'VILLE_DEPART' => $data['...']
+            'ID_VOYAGE' => $data['voyage'],
+            'ID_CLIENT' => $data['client'],
+            'NUM_RESERVATION' => $data['numreservation'],
+            'DATE_DEPART' => $data['dateDepart'],
+            'VILLE_DEPART' => $data['villeDepart']
         ]);
 
         $lastID = $retourclientModel->getInsertID();
         var_dump($lastID);
        
+        $satisfactionModel = new \App\Models\PrestationVoyage();
+        // $satisfactionModel->insert([
+        //     'id_retour_client' => $lastID
+        // ]);
+
+        foreach($data['notePresta'] as $prestation){
+            $satisfactionModel->insert([
+                'id_retour_client' => $lastID,
+                'id_prestation' => $prestation 
+            ]);
+
+        }
+
         return'';
 
         // redirection vers... ?
