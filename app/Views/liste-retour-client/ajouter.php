@@ -38,8 +38,10 @@ foreach($voyages as $voyage){
 
 
 // var_dump($listeClients);
-// var_dump($listeVoyages);
-var_dump($prestations);
+// var_dump($prestationVoyages);
+print('<pre>');
+print_r($prestations);
+print('</pre>');
 
 
     //données du voyage chargée
@@ -101,20 +103,20 @@ var_dump($prestations);
 
 
     //foreach des prestation
-    foreach($prestations as $prestation){
-        echo form_label($prestation['LIBELLE_PRESTATION'] );
-        $prestation['ID_PRESTATION'] = [
-        'name'      => 'notePresta[]',
-        'id'        => $prestation['ID_PRESTATION'],
-        // 'placeholder' => 'note sur 3',
-        // 'value'     => $prestation['ID_PRESTATION'],
-        // 'maxlength' => '2',
-        // 'size'      => '5',
-        'style'     => 'width:20%',
-    ];
-    echo form_input($prestation['ID_PRESTATION']);
+    // foreach($prestations as $prestation){
+    //     echo form_label($prestation['LIBELLE_PRESTATION'] );
+    //     $prestation['ID_PRESTATION'] = [
+    //     'name'      => 'notePresta[]',
+    //     'id'        => $prestation['ID_PRESTATION'],
+    //     // 'placeholder' => 'note sur 3',
+    //     // 'value'     => $prestation['ID_PRESTATION'],
+    //     // 'maxlength' => '2',
+    //     // 'size'      => '5',
+    //     'style'     => 'width:20%',
+    // ];
+    // echo form_input($prestation['ID_PRESTATION']);
 
-         }
+    //     }
     
     
     

@@ -30,8 +30,6 @@ class ListeRetourClient extends BaseController
         $voyageModel = new \App\Models\Voyages();
         $voyages = $voyageModel->findAll();
 
-         
-
         // model prestation + recup bdd
         $prestationModel = new \App\Models\Prestation();
         $prestations = $prestationModel->findAll();
@@ -42,9 +40,10 @@ class ListeRetourClient extends BaseController
 
 
 
-        return view('liste-retour-client/ajouter',['clients' => $clients, 'voyages' => $voyages, 'prestations' => $prestations]);
+        return view('liste-retour-client/ajouter',['clients' => $clients, 'voyages' => $voyages, 'prestations' => $prestations, 'prestationVoyages' => $prestationVoyages]);
     }
-        //méthode pour l'ajout de retour client en base de donnée
+
+    //méthode pour l'ajout de retour client en base de donnée
 
     public function ajouter():string
     {
@@ -68,20 +67,23 @@ class ListeRetourClient extends BaseController
 
         $lastID = $retourclientModel->getInsertID();
         var_dump($lastID);
-       
+        
         $satisfactionModel = new \App\Models\Satisfaction();
-        // $satisfactionModel->insert([
-        //     'id_retour_client' => $lastID
-        // ]);
+        $satisfactionModel->insert([
+            'ID_RETOUR_CLIENT' => $lastID
+        ]);
 
-        foreach($data['notePresta'] as $prestation){
-            $satisfactionModel->insert([
-                'id_retour_client' => $lastID,
-                'id_prestation' => $prestation,
-                'satisfaction_prestation_client' => $prestation 
-            ]);
+        // foreach($data['notePresta'] as $prestation){
+        //     if (!empty($prestation)){
+        //         $satisfactionModel->insert([
+        //             'id_retour_client' => $lastID,
+        //             'id_prestation' => $prestation,
+        //             'satisfaction_prestation_client' => $prestation]);
 
-        }
+        //     } 
+            
+
+        // }
 
         return'';
 
